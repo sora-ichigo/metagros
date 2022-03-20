@@ -1,12 +1,13 @@
 {
   "name": "metagros",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Metagros is a tool to get OGP data from the site URL.",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "license": "MIT",
   "author": "igsr5 <i@gsr5.com> (https://igsr5.dev/)",
   "homepage": "https://github.com/igsr5/metagros",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/igsr5/metagros.git"
@@ -16,7 +17,8 @@
   },
   "scripts": {
     "lint": "eslint --fix --ext .jsx,.js,.tsx,.ts .",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "tsc"
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",

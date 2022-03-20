@@ -41,7 +41,7 @@ const metadata = await getPageMetaData(url);
 console.log(metadata);
 ```
 
-```sh
+```ts
 $ node --experimental-specifier-resolution=node ./main.js
 {
   title: 'Site title',

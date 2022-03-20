@@ -9,7 +9,7 @@ Metagros is a tool to get OGP data from the site URL.
 https://pokemon-incandescent.fandom.com/wiki/Metagross
 
 ## Features
-- Node.js module
+- Node.js ESM module
 - Get `og:OOO` content data from site url
   - e.g.  `<meta property="og:title" content="metagros page" />` → get `"metagros page"`
 - Less dependence

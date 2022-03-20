@@ -1,6 +1,6 @@
 {
   "name": "metagros",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Metagros is a tool to get OGP data from the site URL.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -17,7 +17,7 @@
   },
   "scripts": {
     "lint": "eslint --fix --ext .jsx,.js,.tsx,.ts .",
-    "test": "jest",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "prepare": "tsc"
   },
   "devDependencies": {

@@ -17,7 +17,7 @@
   },
   "scripts": {
     "lint": "eslint --fix --ext .jsx,.js,.tsx,.ts .",
-    "test": "jest",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "prepare": "tsc"
   },
   "devDependencies": {

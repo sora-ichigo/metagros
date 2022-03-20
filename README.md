@@ -12,7 +12,7 @@ https://pokemon-incandescent.fandom.com/wiki/Metagross
 - Node.js ESM module
 - Get `og:OOO` content data from site url
   - e.g.  `<meta property="og:title" content="metagros page" />` → get `"metagros page"`
-- Less dependence
+- Less dependenceies
 - Popular Pokémon
   - so cool!! cute!! intelligence!!!
 

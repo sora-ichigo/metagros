@@ -21,7 +21,7 @@ jobs:
       # - name: Run eslint
       #   run: yarn lint
       - name: Run Jest
-        run: yarn jest
+        run: yarn test
       - name: Upload test coverage artifact
         uses: actions/upload-artifact@v1
         with:

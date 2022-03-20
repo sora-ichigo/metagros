@@ -6,6 +6,9 @@
   "dependencies": {
     "jsdom": "^19.0.0"
   },
+  "scripts": {
+    "test": "jest"
+  },
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "@types/jsdom": "^16.2.14",

@@ -2,6 +2,7 @@ import { Metadata, ogKey } from "./type";
 import * as https from "https";
 import { JSDOM } from "jsdom";
 import { snakeCase } from "./utils";
+import { IncomingMessage } from "http";
 
 export const getPageMetaData = async (url: string): Promise<Metadata> => {
   const body = await getHTMLHeadFromUrl(url);
@@ -23,10 +24,10 @@ export const getPageMetaData = async (url: string): Promise<Metadata> => {
   return metadata;
 };
 
-const getHTMLHeadFromUrl = (url: string): Promise<string> => {
+export const getHTMLHeadFromUrl = (url: string): Promise<string> => {
   return new Promise((resolve, reject) => {
     https
-      .get(url, (res: any) => {
+      .get(url, (res: IncomingMessage) => {
         let body = "";
 
         res.setEncoding("utf8");
@@ -41,9 +42,3 @@ const getHTMLHeadFromUrl = (url: string): Promise<string> => {
       .on("error", reject);
   });
 };
-
-const url = "https://www.wantedly.com/companies/wantedly/post_articles/385515";
-(async () => {
-  const metadata = await getPageMetaData(url);
-  console.log(metadata);
-})();

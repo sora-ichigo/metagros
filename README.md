@@ -31,5 +31,29 @@ $ yarn add metagros
 
 🚧 wip...
 
+main.js
+```ts
+import { getPageMetaData } from "metagros";
+
+const url = "https://some.com";
+
+const metadata = await getPageMetaData(url);
+console.log(metadata);
+```
+
+```sh
+$ node --experimental-specifier-resolution=node ./main.js
+{
+  title: 'Site title',
+  description: 'Site description.This site is OO's HP ...',
+  image: 'https://images.com/hoge',
+  type: 'article',
+  siteName: undefined,
+  url: 'https://some.com'
+}
+```
+
+
+
 ## License
 See [LISENSE](https://github.com/igsr5/metagros/blob/master/LICENSE).

@@ -1,6 +1,6 @@
 {
   "name": "metagros",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Metagros is a tool to get OGP data from the site URL.",
   "main": "build/index.js",
   "types": "build/index.d.ts",

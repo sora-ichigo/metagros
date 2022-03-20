@@ -12,14 +12,14 @@ jobs:
       - uses: actions/checkout@v1
       - name: yarn install
         run: yarn install
-      - name: eslint review
-        uses: reviewdog/action-eslint@v1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          reporter: github-pr-review
-          eslint_flags: "./**/*.{vue,ts,js}"
-      - name: Run eslint
-        run: yarn lint
+      # - name: eslint review
+      #   uses: reviewdog/action-eslint@v1
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     reporter: github-pr-review
+      #     eslint_flags: "./**/*.{vue,ts,js}"
+      # - name: Run eslint
+      #   run: yarn lint
       - name: Run Jest
         run: yarn jest
       - name: Upload test coverage artifact

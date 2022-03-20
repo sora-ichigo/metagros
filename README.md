@@ -3,7 +3,7 @@
 ![](https://img.shields.io/badge/license-MIT-green)
 
 Metagros is a tool to get OGP data from the site URL.
-this is Node.js module.
+
 
 ![](https://static.wikia.nocookie.net/pokemon-radiance/images/0/01/059_Metagross.png/revision/latest/scale-to-width-down/308?cb=20200304023123)  
 https://pokemon-incandescent.fandom.com/wiki/Metagross
@@ -44,12 +44,12 @@ console.log(metadata);
 ```ts
 $ node --experimental-specifier-resolution=node ./main.js
 {
-  title: 'Site title',
-  description: 'Site description.This site is OO's HP ...',
-  image: 'https://images.com/hoge',
-  type: 'article',
+  title: "Site title",
+  description: "Site description.This site is OO's HP ...",
+  image: "https://images.com/hoge",
+  type: "article",
   siteName: undefined,
-  url: 'https://some.com'
+  url: "https://some.com"
 }
 ```
 

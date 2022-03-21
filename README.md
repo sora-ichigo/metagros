@@ -45,9 +45,7 @@ $ yarn add metagros
 
 ## Example
 
-🚧 wip...
 
-main.js
 ```ts
 import { getPageMetaData } from "metagros";
 
@@ -55,10 +53,8 @@ const url = "https://some.com";
 
 const metadata = await getPageMetaData(url);
 console.log(metadata);
-```
 
-```ts
-$ node --experimental-specifier-resolution=node ./main.js
+// output
 {
   title: "Site title",
   description: "Site description.This site is OO's HP ...",

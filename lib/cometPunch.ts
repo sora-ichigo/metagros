@@ -1,2 +1,2 @@
-export { getPageMetaData } from "./getPageMetaData";
+export { getPageOGPMetadata } from "./getPageOGPMetadata";
 export { type Metadata } from "./type";

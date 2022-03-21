@@ -1,5 +1,5 @@
-import { getPageMetaData } from "./getPageMetaData";
-import * as target from "./getPageMetaData";
+import { getPageOGPMetadata } from "./getPageOGPMetadata";
+import * as target from "./getPageOGPMetadata";
 import { Metadata } from "./type";
 
 describe("getPageMetadata", () => {
@@ -23,7 +23,7 @@ describe("getPageMetadata", () => {
       })
     );
 
-    const body = await getPageMetaData("https://test.com");
+    const body = await getPageOGPMetadata("https://test.com");
     const exp: Metadata = {
       title: "title",
       description: "description",

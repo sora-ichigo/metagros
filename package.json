@@ -18,7 +18,7 @@
   "scripts": {
     "lint": "eslint --fix --ext .jsx,.js,.tsx,.ts .",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
-    "prepare": "tsc"
+    "prepare": "rm -rf move && tsc"
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",

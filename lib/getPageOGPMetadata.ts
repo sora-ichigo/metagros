@@ -4,7 +4,7 @@ import { JSDOM } from "jsdom";
 import { snakeCase } from "./utils";
 import { IncomingMessage } from "http";
 
-export const getPageMetaData = async (url: string): Promise<Metadata> => {
+export const getPageOGPMetadata = async (url: string): Promise<Metadata> => {
   const body = await getHTMLHeadFromUrl(url);
   const dom = new JSDOM(body);
   var metadata: Metadata = {};

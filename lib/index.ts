@@ -1,1 +1,0 @@
-export { getPageMetaData } from "./getPageMetaData";

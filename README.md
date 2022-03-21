@@ -47,7 +47,7 @@ $ yarn add metagros
 
 
 ```ts
-import { getPageMetaData } from "metagros";
+import { getPageMetaData } from "metagros/move/cometPunch";
 
 const url = "https://some.com";
 

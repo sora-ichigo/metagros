@@ -26,8 +26,7 @@ https://ogp.me/
 
 ## Support OGP Metadata
 - [Basic Metadata](https://ogp.me/#metadata)
-- Some [Optional Metadata](https://o
-gp.me/#optional)
+- Some [Optional Metadata](https://ogp.me/#optional)
   - description
   - site_name
 

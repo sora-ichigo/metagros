@@ -4,6 +4,7 @@ tsconfig.json
 .eslintrc.json
 /.github
 .prettierrc
-LICENSE
 jest.config.js
 /coverage
+**/*.test.js
+**/*.test.d.ts
